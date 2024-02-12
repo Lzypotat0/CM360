@@ -44,17 +44,7 @@ var ADS_SHEET = 'Ads';
 var CREATIVES_SHEET = 'Creatives';
 var LANDING_PAGES_SHEET = 'LandingPages';
 
-
-/**
- * Helper function to get DCM Profile ID.
- * @return {object} DCM Profile ID.
- */
-function _fetchProfileId() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var range = ss.getRangeByName(DCMUserProfileID);
-  return range.getValue();
-}
-/*******************************************************************************************************************
+*******************************************************************************************************************
  * Find and clear, or create a new sheet named after the input argument.
  * @param {string} sheetName The name of the sheet which should be initialized.
  * @param {boolean} lock To lock the sheet after initialization or not
